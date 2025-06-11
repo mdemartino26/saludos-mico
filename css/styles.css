@@ -20,7 +20,7 @@ header {
   height: 10vh;
 }
 
-.logo a{
+.logo a {
   font-size: 24px;
   text-decoration: none;
   color: white;
@@ -196,35 +196,46 @@ nav a:hover {
   left: 0;
   width: 0;
   height: 100%;
-  background: #007bff; 
-  transition: width 0.4s ease-in-out; 
+  background: #007bff;
+  transition: width 0.4s ease-in-out;
   z-index: -1;
 }
 
 .contact-btn:hover {
-  color: #fff; 
-  border-color: #007bff; 
+  color: #fff;
+  border-color: #007bff;
 }
 
 .contact-btn:hover::before {
-  width: 100%; 
+  width: 100%;
 }
 
-.nada:hover{
+.nada:hover {
   color: transparent;
   background-color: transparent;
 }
 
-
-.mobile{
+.mobile {
   display: none;
 }
 
-@media (width <= 760px){
- .mobile{
-  display: block;
- } 
- .desktop{
-  display: none;
- }
+@media (width <= 760px) {
+  .mobile {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    text-align: center;
+  }
+  .mobile button{
+  padding: 2em;
+  border-radius: 25px;
+  font-size: 1em;
+
+}
+  .desktop {
+    display: none;
+  }
 }
