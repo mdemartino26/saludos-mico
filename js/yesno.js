@@ -1,3 +1,12 @@
+function recargar(){
+   location.reload(true)
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const botonAgain = document.getElementById('again');
+    if (botonAgain) {
+        botonAgain.addEventListener('click', recargar);
+    }
+});
 document.getElementById("yesno-form").addEventListener("submit", async (e) => {
     e.preventDefault();
     const input = document.getElementById("yesno-input");
@@ -56,33 +65,6 @@ document.getElementById("yesno-form").addEventListener("submit", async (e) => {
 });
 
 
-function recargar(){
-    const input = document.getElementById("yesno-input");
-    const main = document.querySelector("main.hero");
-    const respuestaDiv = document.getElementById("yesno-response");
-    const botonAgain = document.getElementById('again');
-    const form = document.getElementById('yesno-form');
-    const questionDisplayH2 = document.getElementById('question-display'); 
-
-   
-    input.value = ''; 
-    respuestaDiv.textContent = ''; 
-    main.style.backgroundImage = ''; 
-    main.style.background = ''; 
-    main.style.height = ''; 
 
 
-    questionDisplayH2.textContent = 'Hace una pregunta "si o no"';
 
-   
-    form.style.display = 'block';
-    botonAgain.style.display = 'none';
-}
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const botonAgain = document.getElementById('again');
-    if (botonAgain) {
-        botonAgain.addEventListener('click', recargar);
-    }
-});
