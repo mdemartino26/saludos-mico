@@ -219,6 +219,10 @@ nav a:hover {
   display: none;
 }
 
+.pala {
+  height: 70vh;
+}
+
 @media (width <= 760px) {
   .mobile {
     width: 80%;
