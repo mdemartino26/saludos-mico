@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chistes del Día</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="./index.html">◉</a></div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Mejor Equipo</a>
+        <a href="#">Sobre Nosotros</a>
+      </nav>
+      <button class="contact-btn">Contacto</button>
+    </header>
+
+    <main class="hero">
+      <section style="margin-top: 2rem">
+        <h2>Pregunta Sí o No</h2>
+        <form id="yesno-form">
+          <input
+            type="text"
+            id="yesno-input"
+            placeholder="Escribí tu pregunta de sí o no"
+            required
+            style="padding: 0.5rem; width: 300px"
+          />
+          <button type="submit" class="vote-btn">Preguntar</button>
+        </form>
+        <div id="yesno-response" style="margin-top: 1rem"></div>
+      </section>
+    </main>
+
+    <script src="./js/gatitos.js"></script>
+    <script src="./js/yesno.js"></script>
+  </body>
+</html>

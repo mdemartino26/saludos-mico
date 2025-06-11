@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background: linear-gradient(120deg, #8e9efa, #c758dd);
   color: white;
   min-height: 100vh;
@@ -17,6 +17,7 @@ header {
   align-items: center;
   padding: 20px 40px;
   background: rgba(255, 255, 255, 0.05);
+  height: 10vh;
 }
 
 .logo {
@@ -66,8 +67,15 @@ nav a:hover {
   margin-bottom: 40px;
 }
 
+.menu{
+  display: flex;
+  flex-direction: column;
+}
+
 .vote-btn {
-  padding: 15px 30px;
+  width: 30%;
+  padding-top: 15px;
+  padding-bottom: 15px ;
   background: white;
   color: #6b7aff;
   border: none;
@@ -76,8 +84,38 @@ nav a:hover {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
+  margin-top: 10px;
 }
 
 .vote-btn:hover {
   background: #e2e8ff;
+ 
+  padding: 30px 30px;
+}
+
+.chistes:hover {
+  background-image: url("../img/risas.gif");
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+}
+
+.gatitos:hover {
+  background-image: url("../img/gatitos.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 60px;
+}
+
+.pregunta:hover {
+  background-image: url("../img/yesno.gif");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
 }
