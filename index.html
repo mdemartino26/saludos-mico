@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mejor Diseño del Año</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
-  <header>
-    <div class="logo">◉</div>
-    <nav>
-      <a href="#">Mejor Proyecto</a>
-      <a href="#">Mejor Equipo</a>
-      <a href="#">Sobre Nosotros</a>
-    </nav>
-    <button class="contact-btn">Contacto</button>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marian's dungeon</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="desktop">
+    <header>
+     <div class="logo"><a href="./index.html">◉</a></div>
+      <nav>
+         <p>acá pondría un menu, si tuviera necesidad</p>
+      </nav>
+       <a href="#"><button class="contact-btn">← Volver</button></a>
+    </header>
 
-  <main class="hero">
-    <h1>BIENVENIDOS</h1>
-    <p>Para que no me extrañen tanto les dejo esto:</p>
-    <div class="menu">
-    <a href="./chistes.html"><button class="vote-btn chistes">Necesitas chistes malos?</button></a>
-    <a href="./gatitos.html"><button class="vote-btn gatitos">gatitos? O.O</button></a>
-    <a href="./yesno.html"><button class="vote-btn pregunta">Pregunta al oraculo</button></a>
-    </div>
-  </main>
+    <main class="hero">
+      <h1>BIENVENIDOS</h1>
+      <p>Para que no me extrañen tanto les dejo esto:</p>
+      <div class="menu">
+        <a href="./consejos.html" class="btn-menu"
+          ><button class="vote-btn consejo">consejo del dia</button></a
+        >
+        <a href="./chistes.html" class="btn-menu"
+          ><button class="vote-btn chistes">Necesitas chistes malos?</button></a
+        >
+        <a href="./gatitos.html" class="btn-menu"
+          ><button class="vote-btn gatitos">gatitos? O.O</button></a
+        >
+        <a href="./yesno.html" class="btn-menu"
+          ><button class="vote-btn pregunta">Pregunta al oraculo</button></a
+        >
 
-  <script src="script.js"></script>
-</body>
+        <a href="https://es.akinator.com/" target="_blank" class="btn-menu"
+          ><button class="vote-btn duda">
+            Seguro te habias olvidado de esto
+          </button></a
+        > 
+        <a href="#" class="btn-menu"
+          ><button class="vote-btn nada">Este boton no hace nada</button></a
+        >
+      </div>
+      </div>
+
+      <div class="mobile">
+        <h2>No se puede usar esta app en celulares</h2>
+        <button class="perdon">Perdon Marian.</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>

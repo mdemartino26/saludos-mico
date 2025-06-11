@@ -7,34 +7,41 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="desktop">
     <header>
       <div class="logo"><a href="./index.html">◉</a></div>
       <nav>
-        <a href="index.html">Inicio</a>
-        <a href="#">Mejor Equipo</a>
-        <a href="#">Sobre Nosotros</a>
+       <p>acá pondría un menu, si tuviera necesidad</p>
       </nav>
-      <button class="contact-btn">Contacto</button>
+      <a href="./index.html"><button class="contact-btn">← Volver</button></a>
     </header>
 
     <main class="hero">
       <section style="margin-top: 2rem">
-        <h2>Pregunta Sí o No</h2>
+        <h2 id="question-display">Hace una pregunta "si o no"</h2>
         <form id="yesno-form">
           <input
             type="text"
             id="yesno-input"
             placeholder="Escribí tu pregunta de sí o no"
             required
-            style="padding: 0.5rem; width: 300px"
           />
-          <button type="submit" class="vote-btn">Preguntar</button>
+          <button type="submit" class="btn-detalle first">Preguntar</button>
         </form>
-        <div id="yesno-response" style="margin-top: 1rem"></div>
+         <div id="yesno-response" style="margin-top: 1rem"></div>
+
+        <button type="button" id="again" class="again" style="display: none;">Preguntar de nuevo</button>
+       
       </section>
+      </div>
+
+      <div class="mobile">
+        <h2>No se puede usar esta app en celulares</h2>
+        <button class="perdon">Perdon Marian.</button>
+      </div>
+    </main>
     </main>
 
-    <script src="./js/gatitos.js"></script>
     <script src="./js/yesno.js"></script>
   </body>
 </html>

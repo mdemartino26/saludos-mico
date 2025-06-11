@@ -20,8 +20,10 @@ header {
   height: 10vh;
 }
 
-.logo {
+.logo a{
   font-size: 24px;
+  text-decoration: none;
+  color: white;
 }
 
 nav a {
@@ -52,30 +54,43 @@ nav a:hover {
 }
 
 .hero {
-  padding: 100px 40px;
+  padding: 60px 40px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 60px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 40px;
 }
 
-.menu{
+.menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.joke-box {
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 50px;
+  margin-bottom: 40px;
+  font-size: 1.5em;
+}
+
+.btn-menu {
+  width: 30%;
 }
 
 .vote-btn {
-  width: 30%;
-  padding-top: 15px;
-  padding-bottom: 15px ;
+  width: 100%;
+  padding: 60px;
   background: white;
   color: #6b7aff;
   border: none;
@@ -89,13 +104,13 @@ nav a:hover {
 
 .vote-btn:hover {
   background: #e2e8ff;
- 
+
   padding: 30px 30px;
 }
 
 .chistes:hover {
   background-image: url("../img/risas.gif");
- 
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -118,4 +133,98 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   padding: 60px;
+}
+
+.consejo:hover {
+  background-image: url("../img/consejos.gif");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 60px;
+}
+
+.duda:hover {
+  background-image: url("../img/duda.gif");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 60px;
+}
+
+.btn-detalle {
+  padding: 1.5em;
+  width: 50%;
+  border: 1px solid;
+  border-radius: 25px;
+  place-self: center;
+}
+
+.again {
+  padding: 1.5em;
+  width: 50%;
+  border: 1px solid;
+  border-radius: 25px;
+  place-self: center;
+  margin-top: 40vh;
+}
+
+#yesno-input {
+  padding: 1.5em;
+  width: 50%;
+  border: 1px solid;
+  border-radius: 25px;
+  place-self: center;
+}
+
+#yesno-form {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#again {
+  display: none;
+}
+
+.contact-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #007bff; 
+  transition: width 0.4s ease-in-out; 
+  z-index: -1;
+}
+
+.contact-btn:hover {
+  color: #fff; 
+  border-color: #007bff; 
+}
+
+.contact-btn:hover::before {
+  width: 100%; 
+}
+
+.nada:hover{
+  color: transparent;
+  background-color: transparent;
+}
+
+
+.mobile{
+  display: none;
+}
+
+@media (width <= 760px){
+ .mobile{
+  display: block;
+ } 
+ .desktop{
+  display: none;
+ }
 }

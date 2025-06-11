@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chistes del Día</title>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <header>
-    <div class="logo"><a href="./index.html">◉</a></div>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="#">Mejor Equipo</a>
-      <a href="#">Sobre Nosotros</a>
-    </nav>
-    <button class="contact-btn">Contacto</button>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chistes del Día</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="desktop">
+    <header>
+      <div class="logo"><a href="./index.html">◉</a></div>
+      <nav>
+        <p>acá pondría un menu, si tuviera necesidad</p>
+      </nav>
+      <a href="./index.html"><button class="contact-btn">← Volver</button></a>
+    </header>
 
-  <main class="hero">
-    <h1>*MALOS* CHISTES DEL DÍA</h1>
-    <p>y en Ingles porque no hay una API en español</p>
-    <div id="joke-box" class="joke-box">Cargando chiste...</div>
-    <button class="vote-btn" id="joke-button">Otro Chiste →</button>
-  </main>
+    <main class="hero">
+      <h1>CHISTES DEL DÍA *MALOS*</h1>
+      <p>y en Ingles porque no hay una API en español</p>
+      <div id="joke-box" class="joke-box">Cargando chiste...</div>
+      <button class="btn-detalle" id="joke-button">Otro Chiste →</button>
+</div>
+      <div class="mobile">
+        <h2>No se puede usar esta app en celulares</h2>
+        <button class="perdon">Perdon Marian.</button>
+      </div>
+    </main>
 
-  <script src="./js/chistes.js"></script>
-</body>
+    <script src="./js/chistes.js"></script>
+  </body>
 </html>
